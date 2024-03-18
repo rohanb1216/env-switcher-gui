@@ -3,7 +3,7 @@ from copy import copy
 from typing import Optional, Dict
 
 import yaml
-from autoclass import check_var
+from envswitch.utils import check_var
 from envswitch.env_api import set_env_variables_permanently
 
 from envswitch.yaml_ordered_dict import safe_load_ordered

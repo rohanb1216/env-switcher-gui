@@ -65,7 +65,7 @@ KEYWORDS = 'env-variable environment variable http proxy switch gui cli desktop 
 try:
     import pypandoc
     print('converting readme to RST')
-    LONG_DESCRIPTION = pypandoc.convert(path.join(here, 'README.md'), 'rst').replace('\r', '')
+    LONG_DESCRIPTION = pypandoc.convert_file(path.join(here, 'README.md'), 'rst').replace('\r', '')
 
     # Validate that the generated doc is correct
     print('validating generated rst readme')
